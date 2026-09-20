@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Poem Gallery</title>
+</head>
+
+<body>
+
+    <h1>Virtual Poem Gallery</h1>
+
+    <!-- West Wall -->
+    <div id="wall-west">
+        <h2>West Wall</h2>
+
+        <article id="poem-morning">
+            <h3>Morning</h3>
+            <p>
+                The sun comes up,<br>
+                The sky turns bright,<br>
+                A brand new day<br>
+                Replaces night.
+            </p>
+        </article>
+
+        <article id="poem-rain">
+            <h3>Rain</h3>
+            <p>
+                Raindrops fall,<br>
+                Tap the ground,<br>
+                Making music<br>
+                All around.
+            </p>
+        </article>
+    </div>
+
+    <!-- East Wall -->
+    <div id="wall-east">
+        <h2>East Wall</h2>
+
+        <article id="poem-moon">
+            <h3>The Moon</h3>
+            <p>
+                The moon is high,<br>
+                Above the trees,<br>
+                Shining softly<br>
+                In the breeze.
+            </p>
+        </article>
+
+        <article id="poem-dream">
+            <h3>Dream</h3>
+            <p>
+                I close my eyes,<br>
+                The world grows still,<br>
+                And dreams appear<br>
+                Beyond the hill.
+            </p>
+        </article>
+    </div>
+
+    <!-- Submission Station -->
+    <div id="submission-station">
+        <h2>Submit a New Poem</h2>
+
+        <label for="poem-title">Poem Title:</label>
+        <input type="text" id="poem-title">
+
+        <br><br>
+
+        <label for="poem-content">Poem:</label>
+        <textarea id="poem-content" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <label for="poem-color">Background Color:</label>
+        <input type="color" id="poem-color" value="#ffffff">
+
+        <br><br>
+
+        <label for="wall-select">Choose a Wall:</label>
+        <select id="wall-select">
+            <option value="wall-west">West Wall</option>
+            <option value="wall-east">East Wall</option>
+        </select>
+
+        <br><br>
+
+        <button id="add-poem-btn">Add Poem</button>
+    </div>
+
+</body>
+</html>
