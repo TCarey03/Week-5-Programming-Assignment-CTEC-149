@@ -35,3 +35,17 @@ I did not have to manually delete the poem from the West Wall. When appendChild(
 After moving the poem, I changed its background color to light green using JavaScript. This helped me see that the poem had been moved and that my Phase 3 code was running.
 
 The main thing I learned from this phase is that appendChild() can move an existing element to a new location in the DOM. It does not create a copy of the element. 
+
+---------------------------------
+
+Phase 4 Journal
+
+In Phase 4, I added an event listener to the Add Poem button so that new poems could be created when the button was clicked.
+
+When the button is clicked, the JavaScript reads the values from the title, poem content, color, and wall selection inputs. I used document.createElement() to create a new article, h3, and p element.
+
+The new elements exist in memory after createElement() is called, but they are not visible on the webpage yet. I used textContent to put the user's title and poem into the new elements and used style.backgroundColor to apply the selected color.
+
+I then used appendChild() to add the title and poem to the new article and finally appended the new article to the wall selected by the user. At that point, the new poem became part of the DOM and appeared on the page.
+
+I also cleared the title and poem text inputs after adding the poem so the user could submit another poem.
