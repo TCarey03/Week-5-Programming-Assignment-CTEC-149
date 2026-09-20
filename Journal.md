@@ -21,3 +21,17 @@ I then changed its background color using the style.backgroundColor property.
 For the group selection, I used querySelectorAll() to select all of the article elements inside the West Wall. This returned both poems on that wall.
 
 The difference is that getElementById() was used to find one specific element, while querySelectorAll() returned all elements that matched the selector. I used console.log() to check that the West Wall poems were correctly selected.
+
+---------------------------------
+
+Phase 3 Journal
+
+In Phase 3, I moved the Morning poem from the West Wall to the East Wall using appendChild().
+
+I first selected both walls using getElementById(). I already had the Morning poem selected from Phase 2. I then called eastWall.appendChild(morningPoem).
+
+I did not have to manually delete the poem from the West Wall. When appendChild() was called, the existing DOM node was automatically removed from its old parent and added to the new parent.
+
+After moving the poem, I changed its background color to light green using JavaScript. This helped me see that the poem had been moved and that my Phase 3 code was running.
+
+The main thing I learned from this phase is that appendChild() can move an existing element to a new location in the DOM. It does not create a copy of the element. 
